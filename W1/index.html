@@ -43,30 +43,89 @@ console.log("5 + 2 = " + add(a,b));
 
 
 //W1 Loops and Arrays
+/*
+var myArray  = []
+
+for(var i = 0; i < 100; + i++) 
+
+    myArray[i] = i + 1
+
+    /*  if (i % 2 == 0){
+        console.log("Buzz");
+      } 
+      else if (i % 3 == 0) {
+        console.log("Fizz"); 
+      }
+      else if (i % 2 || i % 3){
+        console.log("FizzBuzz");
+
+}
+}
+console.log(myArray[i]); 
+*/
+
+
+
+//W1 Fizz Buzz
 
 var myArray  = []
 
-for(var i = 0; i < 100; i++)
+for(var i = 0; i < 100; i++) 
 {
-    myArray [i] = 100
+    myArray[i] = i + 1
+
+
+      if (myArray[i] % 2 == 0 && myArray[i] % 3 == 0){
+        myArray[i] = "FizzBuzz";
+      }   
+      else if (myArray[i] % 2 == 0){
+       myArray[i] = "Fizz"
+      } 
+      else if (myArray[i] % 3 == 0) {
+        myArray[i] = ("Buzz"); 
+      } 
+
 }
+
 console.log(myArray); 
 
+/*
+//W1 Objects
 
+for(var i = 0; i < myArray.length; i++){
 
-//W1 Loops For and ForIn
+myArray[i] = {index: i + 1,label:undefined}
 
+if (myArray[i].index % 2 == 0 && myArray[i].index % 3 == 0){
+        myArray[i].label = "FizzBuzz";
+      }   
+      else if (myArray[i].index % 2 == 0){
+       myArray[i].label = "Fizz"
+      } 
+      else if (myArray[i].index % 3 == 0) {
+        myArray[i].label = ("Buzz"); 
+      } 
 
+}console.log(myArray); 
 
+var body = document.querySelector("body")
 
+var str = "";
+//W1
+for(var i = 0; i < myArray.length; i++)
+{
+  for(value in myArray[i])
+  {
+    str += "<p>" + myArray[i][value] + "</p>"
+    console.log(myArray[i][value]);
+  }
+//console.log(myArray[i].index);
+//console.log(myArray[i].label)
 
-//--------------------
+}
 
-
-
-</script>
-
- 
+body.innerHTML = str
+*/
 
 </script>
 
