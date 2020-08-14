@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PUBLIC | W2</title>
+    <title>PUBLIC | W2_b</title>
+
 <style type="text/css">
-   .border{border:1px solid black;}
+
+   .border
+    {
+       border:1px solid black;
+    }
+
 </style>
 
 </head>
@@ -12,7 +18,7 @@
 
 <script>
 
-//W2 Creating Elements 
+//W2 Creating Elements Part 2
 
 var body = document.querySelector('body')
 
@@ -32,8 +38,11 @@ for(var i = 0; i < goodActors.length; i++)
     var tempDiv = document.createElement(`div`);
     body.appendChild(tempDiv);
     tempDiv.setAttribute("id",i);
-    tempDiv.setAttribute("className", 'border');
-
+    //tempDiv.setAttribute("className", 'border');
+    tempDiv.classList.add(className="border");
+    
+    
+    
                 
             for(index in goodActors[i])
             { 
@@ -43,49 +52,6 @@ for(var i = 0; i < goodActors.length; i++)
                 tempP.appendChild(textP)
             }
 }
-
-
-
-
-
-
-
-
-
-
-//W2 Writing HTML To A Page
-/*
-var body = document.querySelector('body')
-
-var str = "<div id=' " + i + " class='border'>" ;
-
-for(var i = 0; i < goodActors.length; i++)
-{
-  for(index in goodActors[i])
-  {
-   str += "<p>"
-   str += goodActors[i].property1;
-   str += "</p>"
-   str += "</div>"
-  } 
-}
-
-
-body.innerHTML += str;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </script>
 </body>
