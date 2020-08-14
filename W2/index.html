@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PUBLIC | W2</title>
+<style type="text/css">
+   .border{border:1px solid black;}
+</style>
+
+</head>
+<body>
+
+<script>
+
+//W2 Creating Elements 
+
+var body = document.querySelector('body')
+
+var goodActors = [ 
+    {first:"Tom", last:"Hardy", credit:"Locke"},
+    {first:"Denzel", last:"Washington", credit:"Deja Vu"},
+    {first:"Angelina", last:"Jolie", credit:"By The Sea"},
+    {first:"Morgan", last:"Freeman", credit:"Bruce Almighty"},
+    {first:"Adam", last:"Sandler", credit:"Billy Madison"},
+    {first:"Josh", last:"Hutcherson", credit:"Bridge To Terabithia"}
+] 
+
+var gAstring = "";
+
+for(var i = 0; i < goodActors.length; i++)
+{
+    /*
+    var tempDiv = document.createElement('div');
+    var text = document.createTextNode('${index}: ${goodActors[index]}');
+    tempDiv.appendChild(tempDiv);
+    body.appendChild(tempDiv);
+    tempDiv.setAttribute("id", string(i++));
+    */
+    
+  
+    gAstring += `<div class="border" id="${i}">`
+                
+            for(index in goodActors[i])
+            
+            { 
+
+                gAstring += "<p>"
+             
+                
+                    gAstring += goodActors[i][index];
+
+
+                gAstring += "</p>"
+
+            }
+
+    gAstring += "</div>"
+}
+
+
+  body.innerHTML += gAstring;
+
+
+
+
+
+
+
+
+
+
+//W2 Writing HTML To A Page
+/*
+var body = document.querySelector('body')
+
+var str = "<div id=' " + i + " class='border'>" ;
+
+for(var i = 0; i < goodActors.length; i++)
+{
+  for(index in goodActors[i])
+  {
+   str += "<p>"
+   str += goodActors[i].property1;
+   str += "</p>"
+   str += "</div>"
+  } 
+}
+
+
+body.innerHTML += str;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -96,44 +96,48 @@ for(var i = 0; i < myArray.length; i++)
 {
     myArray[i] = {index: i + 1,label:undefined}
 
-  //if (myArray[i].index % 2 == 0 && myArray[i].index % 3 == 0){
+  if (myArray[i].index % 2 == 0 && myArray[i].index % 3 == 0){
 
-    //  myArray[i].label = "FizzBuzz"
-  //}
+    myArray[i].label = "FizzBuzz"
+  }
   
-   /*else*/ if (myArray[i].index % 2 == 0) {
+   else if (myArray[i].index % 2 == 0) {
 
       myArray[i].label = "Fizz"
        }
 
-  //else if (myArray[i].index % 3 == 0) {
+  else if (myArray[i].index % 3 == 0) {
 
-     //   myArray[i].label = ("Buzz"); 
-    //  }
+        myArray[i].label = ("Buzz"); 
+      }
 
 }console.log(myArray);
 
 
-//var body = document.querySelector("body")
 
-//var str = "";
+
+/*
+var body = document.querySelector("body")
+
+var str = "";
 
 //W1 Object Properties
-//for(var i = 0; i < myArray.length; i++)
-//{
-  //for(value in myArray[i])
- // {
-   // str += "<p>" + myArray[i][value] + "</p>"
-  //    } 
- //   console.log(myArray[i][value]);
-  //}
+
+for(var i = 0; i < myArray.length; i++)
+{
+  for(value in myArray[i])
+  {
+   str += "<p>" + myArray[i][value] + "</p>"
+      } 
+  //  console.log(myArray[i][value]);
+  }
 
 
 //console.log(myArray[i].index)
 //console.log(myArray[i].label)
 
-//body.innerHTML = str
-
+body.innerHTML = str
+*/
 
 
 </script>
